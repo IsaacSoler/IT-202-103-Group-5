@@ -1,0 +1,64 @@
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 80px;
+    background: rgb(198, 161, 161);
+    box-shadow: 0 5px 15px rgb(219, 177, 177);
+    z-index:999;
+    position:sticky;
+    top: 0;
+    bottom: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600 ;
+    color:black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.on {
+
+    color:rgb(33, 94, 110);
+}
+#navbar li a.on ::after,
+#navbar li a:hover::after{
+    content:"";
+    width:30%;
+    height: 2px;
+    background-color : rgb(126, 126, 176);
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+}
+#homePage{
+    background-image:url("coverImage.jpg");
+    background-color:beige(260, 242, 245);
+    height:90vh;
+    width:100%;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+
+}
+#homePage h1{
+    padding-bottom: 20px;
+}
+#homePage h3{
+    color:rgb(9, 118, 82);
+}
