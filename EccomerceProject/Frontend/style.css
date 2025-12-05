@@ -12,6 +12,11 @@
     bottom: 0;
     
 }
+#header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
 #navbar{
     display: flex;
     align-items: center;
@@ -50,7 +55,7 @@
 
     background-image:url("coverImage.jpg");
     background-color:beige(260, 242, 245);
-    height:80vh;
+    height: 80vh;
     width:100%;
     
     background-size:cover;
@@ -82,7 +87,7 @@
 }
 #shopHeader h2,
 #shopHeader h3{
-    color:yellow;
+    color:white;
 }
 #Products{
     text-align: center;
@@ -103,7 +108,7 @@
     border: 1px solid salmon;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 10px 10px 10px 10px burlywood;
+    box-shadow: 10px 10px 10px 10px rgb(219, 177, 177);;
     margin: 15px 0;
     transition: 0.3sec;
     position:relative;
@@ -111,7 +116,7 @@
 
 }
 #products .product1:hover{
-    box-shadow: 20px 20px 30px blanchedalmond;
+    box-shadow: 15px 15px 15px blanchedalmond;
 }
 #Products .product1 img{
     width: 100%;
@@ -135,3 +140,26 @@
     font-size: 12px;
 
 }
+#Products .product1 input{
+    width: 50px;
+    height: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+
+
+}
+#Products .product1 select{
+
+    margin-right: 10px;
+    height: 25px;
+
+}
+#Products .product1 button{
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+
