@@ -121,9 +121,11 @@
 #Products .product1 img{
     width: 100%;
     border-radius: 20px;
+    margin-right: 50px;
 }
 #Products .product1 .cart{
     color:rgb(94, 174, 81);
+    float: right;
 
 }
 
@@ -161,5 +163,134 @@
     margin-top: 10px;
     
 }
+#Products .product1 {
+    display: flex;
+    flex-direction: column;
+}
+#cart{
+    overflow-x: auto;
+}
+/*cart page*/
+#cart table{
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+
+
+}
+#cart img{
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 200px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(4) input {
+    width:70px;
+    padding: 5px 5px 5px 5px;
+}
+#cart table thead{
+    border: 1px solid rgb(211, 142, 134);
+    border-left:none;
+    border-right:none;
+}
+#cart table {
+    width: 50%;
+    margin: auto;
+}
+
+#cart table thead td{
+    font-weight: 500;
+    font-size: 20;
+    padding: 15px 0;
+    border-top : 1px solid rgb(211, 142, 134);
+    border-bottom : 1px solid rgb(211, 142, 134);
+
+}
+#cart table tbody tr td{
+    padding-top:10px;
+}
+#cart table tbody td{
+    padding-top:13px;
+    font-size: 13px;
+}
+#CarteHead{
+    background-image:url("ShoppingImg.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    flex-direction:column;
+    padding:14px;
+
+
+}
+#CarteHead h2,
+#CarteHead h3{
+    color:rgb(123, 92, 92);
+}
+
+#subtotal{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+
+}
+
+
+#subtotal table{
+    border-collapse: separate;
+    width:50%;
+    font-size:13px;
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 20%;
+
+
+}
+#subtotal table td {
+    width: 50%;
+    border: 1px solid salmon;
+    padding: 10px;
+}
+#subtotal button{
+    background-color: rgb(106, 196, 106);
+    padding: 12px 20px;
+    margin-left: 80% ;
+
+
+}
+#subtotal {
+    width:100%;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
 
 
