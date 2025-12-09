@@ -4,3 +4,4 @@ function getCart() {
 }
 export default getCart;
 
+Added frontend javascript 
