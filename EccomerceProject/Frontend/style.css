@@ -67,8 +67,13 @@
 }
 #homePage h1{
     padding-bottom: 20px;
+    padding-left: 20px;
+}
+#homePage h2{
+padding-left: 20px;
 }
 #homePage h3{
+    padding-left: 20px;
     color:rgb(9, 118, 82);
 }
 /*shop page */
@@ -245,6 +250,17 @@
 #CarteHead h3{
     color:rgb(123, 92, 92);
 }
+.normal{
+    background-color: rgb(106, 196, 106);
+    font-size: 15px;
+    border: 4px solid rgb(108, 99, 99);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+/*checkout page*/
+
 
 #subtotal{
     display: flex;
@@ -253,8 +269,6 @@
     
 
 }
-
-
 #subtotal table{
     border-collapse: separate;
     width:50%;
@@ -270,14 +284,13 @@
     border: 1px solid salmon;
     padding: 10px;
 }
-#subtotal button{
+#subtotal button {
     background-color: rgb(106, 196, 106);
     padding: 12px 20px;
     margin-left: 80% ;
-
-
 }
 #subtotal {
+    
     width:100%;
     padding:20px;
     display: flex;
@@ -286,8 +299,64 @@
     flex-direction: column;
 }
 
+#out thead{
+    margin-top: 50%;
+    color:rgb(130, 12, 12);
+    font-size: medium;
+    padding-right: 20px;
 
 
+}
+#out table{
+    border-collapse: separate;
+    width:50%;
+    font-size:15px;
+    background-color:rgb(196, 179, 179);
+    margin-left: 25%;
+    margin-right: 20%;
+
+}
+
+.order {
+    display: flex;
+    justify-content: center;  
+    margin-top: 60px ;        
+}
+
+#orderbutton {
+    background-color: rgb(106, 196, 106);
+    font-size: 20px;
+    border: 4px solid rgb(103, 44, 44);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#conrfirmationPage{
+
+    background-image:url("thankpage.jpg");
+    background-color:beige(260, 242, 245);
+    width:100%;
+    background-size:cover;
+    display:flex;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    flex-direction:column;
+    padding:14px;
+
+
+}
+
+
+#conrfirmationPage h1{
+    color:yellow;
+}
+
+#conrfirmationPage h2{
+    color:green;
+}
 
 
 
