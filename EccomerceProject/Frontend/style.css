@@ -10,7 +10,7 @@
     z-index:999;
     left: 0;
     bottom: 0;
-    
+
 }
 #header h1{
     font-family: 'Playfair Display', serif;
@@ -24,6 +24,7 @@
     justify-content: space-between;
     
 }
+
 
 #navbar li {
     list-style: none;
@@ -52,12 +53,21 @@
     bottom:-4px;
     left:20px;
 }
+#phone{
+    display: none;
+    align-items:center ;
+}
+#closeIcon{
+    display: none;
+}
 #homePage{
 
     background-image:url("coverImage.jpg");
     background-color:beige(260, 242, 245);
     height: 90vh;
     width:100%;
+    overflow: hidden;
+    max-width: 100%;
     background-size:cover;
     display:flex;
     flex-direction: column;
@@ -375,27 +385,46 @@ padding-left: 20px;
 #conrfirmationPage h2{
     color:green;
 }
-
-
+/* media query*/ 
 @media(max-width:799px){
-    #navbar { 
-        display: flex; 
-        flex-direction: column; 
-        align-items: flex-start; 
-        justify-content: flex-start; 
-        width:300px; 
-        padding: 30px 0 0 40px; 
-        background-color:rgb(234, 161, 161);
-        box-shadow: 0 40px 60px salmon;
-        position: fixed; 
-        top: 0; 
-        right: -300px; 
-        height: 100vh;
-    }
-     #navbar li{
-        margin-bottom: 20px;
-     }
-    }
+ #navbar {
+ display: flex; 
+ flex-direction: column; 
+ justify-content: flex-start; 
+ position: fixed; 
+ top: 0; 
+ align-items: flex-start; 
+ right: -300px; 
+ height: 100vh; 
+ width:100px; 
+ padding: 60px 0 0 40px;
+ box-shadow: 60px 0 0 5px rgb(198, 161, 161);; ;
+ transition: 0.2s;
+ background-color: rgb(198, 161, 161);
+ } 
+ #navbar.active{
+    right:0;
+}
+ 
+
+#navbar li{
+   
+    margin-bottom: 25px;
+}
+#phone{
+    display: flex;
+    align-items:center ;
+}
+
+#closeIcon{
+    top:30px;
+    left:30px;
+    color: black;
+    position: absolute;
+    display: initial;
+}
+}
+
 
 
 
