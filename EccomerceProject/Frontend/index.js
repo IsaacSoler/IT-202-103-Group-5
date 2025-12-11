@@ -1,13 +1,7 @@
-const bar = document.getElementById('bar');
-const closeIcon = document.getElementById('closeIcon');
-const nav=document.getElementById('navbar');
-if (bar){
-    bar.addEventListener('click',()=>{
-        nav.classList.add('active')
-    })
+function getCart() {
+    const data = localStorage.getItem('cart');
+    return data ? JSON.parse(data) : [];
 }
-if (closeIcon){
-    closeIcon.addEventListener('click',()=>{
-        nav.classList.remove('active')
-    })
-}
+export default getCart;
+
+Added frontend javascript 
