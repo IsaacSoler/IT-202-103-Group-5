@@ -3,10 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="index.js"></script>
+
+<section id="header">
+    <h1> My fashion</h1>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html"> home</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a class="on" href="cart.html">cart</a></li>
+            <li><a href="checkout.html">checkout</a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="CarteHead">
+    <h2> Best Items Chosen</h2>
+    <h3>Best Prices Guaranteed </h3>
+</section>
+
+<section id="cartPage">
+    <div id="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>image</td>
+                    <td> product</td>
+                    <td> Price</td>
+                    <td> Quantity</td>
+                    <td> subtotals</td>
+                    <td> Remove</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src="hoddie.jpg" alt="hoddie picture"></td>
+                    <td>Cotton Hoodie</td>
+                    <td>$50</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$50</td>
+                    <td><button class="btn btn-danger btn-sm">delete</button></td>
+                </tr>
+
+                <tr>
+                    <td><img src="jacket.jpg" alt="jacket picture"></td>
+                    <td>jean jacket</td>
+                    <td>$70</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$70</td>
+                    <td><button class="btn btn-danger btn-sm">delete</button></td>
+                </tr>
+
+                <tr>
+                    <td><img src="hoddie.jpg" alt="hoddie picture"></td>
+                    <td>Cotton Hoodie</td>
+                    <td>$50</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$50</td>
+                    <td><button class="btn btn-danger btn-sm">delete</button></td>
+                </tr>
+
+                <tr>
+                    <td><img src="Dress.jpg" alt="Dress picture"></td>
+                    <td> Elegent Dress</td>
+                    <td>$85</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$85</td>
+                    <td><button class="btn btn-danger btn-sm">delete</button></td>
+                </tr>
+
+                <tr>
+                    <td><img src="pant.jpg" alt="Pant picture"></td>
+                    <td>Colorful pant</td>
+                    <td>$40</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$40</td>
+                    <td><button class="btn btn-danger btn-sm">delete</button></td>
+                </tr>
+
+                <tr>
+                    <td><img src="Sweatshirt.jpg" alt="Sweatshirt picture"></td>
+                    <td>Teenagers sweatshirt</td>
+                    <td>$35</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$35</td>
+                    <td><button class="btn btn-danger btn-sm">delete</button></td>
+                </tr>
+            </tbody>
+
+        </table> 
+
+
+
+<a href="checkout.html"> <button class ="normal">Continue to checkout</button> </a> 
+
+
+</section> 
+<script src="index.js"></script>
+
 </body>
 </html>
