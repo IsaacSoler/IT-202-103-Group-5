@@ -1,4 +1,3 @@
-
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -131,6 +130,7 @@ app.post("/api/checkout", (req, res) => {
         order: order
     });
 });
+
 app.get("/api/order-last", (req, res) => {
     if (!lastOrder) {
         return res.status(404).json({ message: "No order found" });
@@ -139,7 +139,7 @@ app.get("/api/order-last", (req, res) => {
     res.json(lastOrder);
 });
 
-
+// shows when server is running
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
